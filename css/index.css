@@ -10,6 +10,10 @@ header {
   background-color: white;
   box-shadow: 0 2px 16px #00000019;
   z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 150px;
 }
 .nav-bar {
   display: flex;
