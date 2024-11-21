@@ -1,0 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: -5px;
+  background-color: white;
+  box-shadow: 0 2px 16px #00000019;
+  z-index: 2;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+}
+
+.logo {
+  width: 80px;
+}
+
+.main-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  font-size: 0.9rem;
+}
+.main-menu :hover {
+  color: var(--main-colour);
+}
+
+.main-menu li {
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: var(--text-colour);
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(233, 230, 230);
+  list-style: none;
+  padding: 10px 0;
+  width: 255px;
+  border-radius: 30px;
+}
+
+nav ul li:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 5px 20px;
+}
+.slide-up {
+  animation-name: dropdown;
+  animation-duration: 500ms;
+  animation-timing-function: ease;
+}
+@keyframes dropdown {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Navigation Icons */
+.navigation-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.navigation-icons i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  background-color: var(--main-colour);
+  color: white;
+  padding: 10px;
+  border-radius: 24px;
+  gap: 5px;
+}
+.contact-btn:hover {
+  transform: translateY(-5px);
+  transition: all 300ms;
+}
+.menu {
+  display: none;
+}
+
+h3 {
+  font-size: 30px;
+}
+.header-link {
+  display: flex;
+  gap: 30px;
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+button {
+  background-color: lightgreen;
+  color: white;
+  border-radius: 2px;
+  padding: 2px;
+  border: none;
+}
+/* .container {
+  width: 1280px;
+  max-width: 90%;
+  margin: 0 auto;
+} */
+.hero-h {
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+  display: flex;
+  flex-direction: row;
+  font-size: 40px;
+  margin-bottom: 30px;
+  gap: 150px;
+  width: 100%;
+}
+.Kiss {
+  color: rgb(14, 210, 14);
+  margin-top: 10px;
+}
+.hero-h p {
+  margin-top: 25px;
+  font-size: 18px;
+}
+span {
+  color: white;
+  background-color: rgb(27, 229, 27);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+.pic-comment {
+  color: red;
+  font-size: 16px;
+  border: 1px solid white;
+  background-color: white;
+  box-shadow: 2px 0px 5px black;
+  margin-bottom: 30px;
+  width: 150px;
+  border-radius: 10px;
+  border-top-right-radius: 30px;
+}
+.pic-comment-container {
+  display: flex;
+  flex-direction: row;
+}
+.hero-p {
+  margin-top: 110px;
+  color: red;
+  text-align: center;
+  font-size: 20px;
+}
+.hero-h2 {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.sushi-s {
+  font-size: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+button {
+  color: white;
+  background-color: rgb(27, 229, 27);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+.button-video {
+  color: black;
+  background-color: white;
+  font-size: 15px;
+  padding: 10px;
+}
+.section2_img1 {
+  max-width: 990px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+}
+.div_pics-5 {
+  background-color: white;
+  box-shadow: 0 2px 16px #00000019;
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+.pics-5 {
+  width: 80px;
+  height: 30px;
+  background-color: aqua;
+  margin-bottom: 6px;
+  border-radius: 50%;
+}
+.special-dishes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  max-width: 990px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.special-pic {
+  background-color: white;
+  box-shadow: 0 2px 16px #00000019;
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+.pic1 {
+  position: relative;
+}
+.bag-icon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0;
+  background-color: rgb(51, 225, 51);
+  padding: 4px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 60px;
+}
+.special-image {
+  width: 160px;
+  height: 80px;
+}
+.img-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.order {
+  display: flex;
+  flex-direction: row;
+}
+.special-span {
+  color: red;
+  background-color: white;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.special_span-div {
+  display: flex;
+  justify-content: flex-start;
+}
+.special_icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.special-chevron {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+.special_chevron-left {
+  color: rgb(38, 226, 38);
+  background-color: white;
+  box-shadow: 0 2px 16px #00000019;
+  padding: 16px;
+  border-radius: 50%;
+}
+.special_chevron-right {
+  color: white;
+  background-color: rgb(46, 229, 46);
+  box-shadow: 0 2px 16px #00000019;
+  padding: 16px;
+  border-radius: 50%;
+}
+.chef-testimonials {
+  margin-top: 220px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 300px;
+}
+.chef-img {
+  padding: auto;
+  background-color: rgb(46, 222, 46);
+  border-radius: 50px;
+}
+.p-testimonials {
+  color: red;
+  font-size: 18px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+.h-testimonials {
+  font-size: 30px;
+}
+.customer-img {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  gap: 100px;
+  margin-bottom: 0;
+}
+.culinary {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+}
+.h2-culinary {
+  margin-bottom: 50px;
+}
+.p-culinary {
+  margin-bottom: 30px;
+}
+.culinary-services {
+  max-width: 450px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  box-shadow: 0 2px 16px #00000019;
+}
+.popcorn {
+  box-shadow: 0 2px 16px #00000019;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.final-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 250px;
+  margin-top: 200px;
+}
+.final_section-li {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+}
+.social-media {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.p-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 25px;
+  margin-bottom: 100px;
+}
+@media (max-width: 1200px) {
+  .hero-h {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .section2_img1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .special-dishes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .chef-testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .culinary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .final_section-li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .final-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
